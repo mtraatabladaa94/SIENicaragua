@@ -15,6 +15,9 @@ class AddTableSubscribed extends Migration
     {
         Schema::create('Subscribed', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('email');
+
+            $table->boolean('IsActive');
             $table->timestamps();
         });
     }

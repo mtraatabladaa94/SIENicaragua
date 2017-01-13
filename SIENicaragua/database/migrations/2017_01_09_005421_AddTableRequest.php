@@ -14,7 +14,22 @@ class AddTableRequest extends Migration
     public function up()
     {
         Schema::create('Request', function (Blueprint $table) {
-            $table->increments('id');
+            $table->uuid('id')->unique();
+            $table->string('companyName');
+            $table->string('name');
+            $table->string('lastName');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('address');
+            $table->enum('license', [0, 1, 2, 3])->default(0);
+            $table->enum('countPC');
+            $table->enum('countEmployees');
+            $table->enum('countLicense');
+
+            $table->boolean('IsSend');
+
+
+            $table->boolean('IsActive');
             $table->timestamps();
         });
     }

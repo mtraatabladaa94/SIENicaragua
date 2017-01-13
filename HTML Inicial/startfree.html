@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Sadara App™</title>
+		<meta charset="utf-8" />
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<!--Styles-->
+		<!--Bower Scripts-->
+		<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css" />
+		<!--Custom Scripts-->
+		<!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+		<link href="custom_components/MaterialIcons/MaterialIcons.css" rel="stylesheet">
+		<link rel="stylesheet" href="custom_components/custom/css/style.css" />
+		<link rel="stylesheet" media="(max-width: 600px)" href="custom_components/custom/css/styleMediaOnly600.css" />
+	</head>
+	<body class="blue-grey lighten-5">
+		<header class="primary-header">
+			<div class="navbar-fixed">
+				<nav class="white z-depth-3">
+					<div class="container">
+						<div class="nav-wrapper">
+							<a href="index.html" class="brand-logo">
+								<img src="Resources/Images/LogoLarge.png" class="logo-large" alt="Logo Sadara App™" />
+							</a>
+							<a href="#" data-activates="mobile" class="custom-button-collapse button-collapse btn btn-flat">
+								<i class="material-icons">menu</i>
+							</a>
+							<ul id="nav-mobile" class="right hide-on-med-and-down">
+								<li><a class="grey-text text-darken-1" href="#section-landing-welcome">Inicio</a></li>
+								<li><a class="grey-text text-darken-1" href="#section-services">Servicios</a></li>
+								<li><a class="grey-text text-darken-1" href="#section-price">Precios</a></li>
+								<li><a class="grey-text text-darken-1" href="#section-contact">Contáctenos</a></li>
+								<li><a href="startfree.html" class="modal-start-free waves-effect waves-light btn deep-orange custom-btn-text">Prueba Gratis</a></li>
+							</ul>
+							<ul class="side-nav" id="mobile">
+								<li><a class="grey-text text-darken-1 menu-active" href="">Inicio</a></li>
+								<li><a class="grey-text text-darken-1" href="">Servicios</a></li>
+								<li><a class="grey-text text-darken-1" href="">Precios</a></li>
+								<li><a class="grey-text text-darken-1" href="">Contáctenos</a></li>
+								<li><a href="#startfree" class="modal-start-free waves-effect waves-light btn deep-orange custom-btn-text">Prueba Gratis</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<!--<div class="bg green lighten-2" style="background-color: #039be5;"></div>
+			<div style="height: 96px;"></div>-->
+		</header>
+
+		<div class="primary-container">
+			<div id="section-landing-welcome" class="section-landing-welcome light-blue darken-1">
+				<div class="container">
+					<div class="row">
+						<div class="col s12 l8">
+							<div class="section-landing-content">
+								<h3 class="section-landing-title white-text">
+									Agiliza procesos críticos y convierte tus datos en información
+								</h3>
+								<br />
+								<h5 class="section-landing-caption white-text">
+									Las herramientas que necesitas para conocer el estado de tus finanzas y tus productos. Sadara App™ cuenta con módulos de inventario, facturación y contabilidad. Además, permite generar informes de sus datos.
+								</h5>
+								<br />
+								<a href="" class="btn white light-blue-text text-darken-1 z-depth-2">
+									Empieza a usar nuestro producto gratis
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-request">
+				<form method="post" action="/">
+					<div class="container">
+						<div class="row">
+							<div class="col s12">
+								<h3 class="section-request-title">Rellena todos los campos y recibe una prueba gratis de nuestro producto</h3>
+								<h5 class="section-request-caption">Te damos 2 meses totalmente gratis para que termines de convencerte</h5>
+								<br /><br />
+							</div>
+							<!--Input Field-->
+							<div class="input-field col s12 m6">
+								<input name="txtNameStartFree" id="nameStartFree" placeholder="" type="text" class="validate">
+								<label for="nameStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">Nombres</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtLastNameStartFree" id="lastNameStartFree" placeholder="" type="text" class="validate">
+								<label for="lastNameStartFree" class="custom-label" data-error="wrong" data-success="right">Apellidos</label>
+							</div>
+							<div class="input-field col s12">
+								<input name="txtName" id="name" placeholder="" type="text" class="validate">
+								<label for="name" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">Empresa</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea name="txtDescriptionStartFree" id="descriptionStartFree" class="validate materialize-textarea" placeholder=""></textarea>
+								<label for="descriptionStartFree" class="custom-label" data-error="wrong" data-success="right">Descripción de la Empresa</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="txtEmployeesStartFree" id="EmployeesStartFree" placeholder="" type="text" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="EmployeesStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">N° de Empleados</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="LicenseStartFree" id="LicenseStartFree" placeholder="" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="LicenseStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">PC's en la Empresa</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="LicenseStartFree" id="" placeholder="" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="LicenseStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">N° de Licencias</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtEmailStartFree" id="emailStartFree" placeholder="" type="email" class="validate">
+								<label for="emailStartFree" class="custom-label" data-error="wrong" data-success="right">E - Mail</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtPhoneStartFree" id="phoneStartFree" placeholder="" type="text" class="validate">
+								<label for="phoneStartFree" class="custom-label" data-error="wrong" data-success="right">Teléfono</label>
+							</div>
+							<!--End Input Field-->
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<button name="btnSend" class="btn deep-orange">
+									Solicitar Prueba Gratis
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="primary-footer page-footer blue-grey darken-2">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Sadara App™</h5>
+						<p class="grey-text text-lighten-4">
+							You can use rows and columns here to organize your your footer content. You can use rows and columns here to organize your footer content. You can use rows and columns your here to organize your footer content. You can use rows and columns here to organize your footer your content. You can use rows and columns here to organize your footer content. You can use your rows and columns here to organize your footer content. You can use rows and columns here to organize your footer content. You can use rows and columns here to organize your footer content.
+						</p>
+					</div>
+					<div class="col l3 s12">
+					</div>
+					<div class="col l3 s12">
+						<h5 class="white-text" style="text-align:center;">Información</h5>
+						<p class="grey-text text-lighten-4">
+							E - Mail:
+							<br />
+							<span class="custom-info-text">
+								<a href="">mtraatablada94@gmail.com</a>
+							</span>
+							<br />
+							Celular:
+							<br />
+							<span class="custom-info-text">
+								<a href="">(+505) 8367 1719</a>
+							</span>
+							<br />
+							Ubicación:
+							<br />
+							<span class="custom-info-text">
+								Lubricentros "Álvarez" 4C al oeste 20VRS al sur.
+								<br />
+								Juigalpa, Chontales, Nicaragua.
+							</span>
+						</p>
+
+						<br />
+
+						<h5 class="white-text" style="text-align:center;">Siguenos</h5>
+						<p class="grey-text text-lighten-4"></p>
+						<div class="center">
+							<a href="" target="_blank">
+								<img class="image-social" src="Resources/Images/Facebook.png" />
+							</a>
+							<a href="" target="_blank">
+								<img class="image-social" src="Resources/Images/Twitter.png" />
+							</a>
+							<a href="" target="_blank">
+								<img class="image-social" src="Resources/Images/Pinterest.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright  blue-grey darken-3">
+				<div class="container">
+					&copy; 2017 Copyright - <a class="white-text" href="http://www.sienicaragua.com" target="_blank">Sadara App™</a>
+					<a class="grey-text text-lighten-4 right" href="https://www.facebook.com/mtraatabladaa94" target="_blank">
+						<img class="circle" style="width:32px;height:32px;margin-top:10px;" src="Resources/Images/12031434_651709138315117_3783905120307888826_o.png" description="Sitio Web diseñado y desarrollado por Ing. Michel Roberto Traña Tablada">
+					</a>
+					<!--<a class="grey-text text-lighten-4 right" href="https://www.facebook.com/mtraatabladaa94" target="_blank">
+						Desarrollado por:
+					</a>-->
+				</div>
+			</div>
+		</footer>
+
+		<!--Modal-->
+		<form method="post" action="/">
+			
+		</form>
+		<div id="startfree" class="modal">
+			<div class="modal-content">
+				<h4>
+					
+				</h4>
+				<p>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<input name="txtNameStartFree" id="nameStartFree" placeholder="" type="text" class="validate">
+								<label for="nameStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">Nombres</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtLastNameStartFree" id="lastNameStartFree" placeholder="" type="text" class="validate">
+								<label for="lastNameStartFree" class="custom-label" data-error="wrong" data-success="right">Apellidos</label>
+							</div>
+							<div class="input-field col s12">
+								<input name="txtName" id="name" placeholder="" type="text" class="validate">
+								<label for="name" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">Empresa</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea name="txtDescriptionStartFree" id="descriptionStartFree" class="validate materialize-textarea" placeholder=""></textarea>
+								<label for="descriptionStartFree" class="custom-label" data-error="wrong" data-success="right">Descripción de la Empresa</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="txtEmployeesStartFree" id="EmployeesStartFree" placeholder="" type="text" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="EmployeesStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">N° de Empleados</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="LicenseStartFree" id="LicenseStartFree" placeholder="" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="LicenseStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">PC's en la Empresa</label>
+							</div>
+							<div class="input-field col s12 m4">
+								<select name="LicenseStartFree" id="" placeholder="" class="validate">
+									<option value="1">1</option>
+									<option value="2">2 - 5</option>
+									<option value="3">6 - 10</option>
+									<option value="4">11 - 20</option>
+									<option value="5">21 - 30</option>
+									<option value="6">31 - 40</option>
+									<option value="7">41 - 50</option>
+									<option value="8">Mas de 50</option>
+								</select>
+								<label for="LicenseStartFree" class="custom-label" data-error="Nombre incorrecto" data-success="Nombre correcto">N° de Licencias</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtEmailStartFree" id="emailStartFree" placeholder="" type="email" class="validate">
+								<label for="emailStartFree" class="custom-label" data-error="wrong" data-success="right">E - Mail</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input name="txtPhoneStartFree" id="phoneStartFree" placeholder="" type="text" class="validate">
+								<label for="phoneStartFree" class="custom-label" data-error="wrong" data-success="right">Teléfono</label>
+							</div>
+						</div>
+					</div>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col s12">
+							<a href="#!" class="modal-action modal-close btn btn-flat btn-small btn-floating">
+								<i class="material-icons">close</i>
+							</a>
+							<a href="#!" class="modal-action btn btn-small btn-floating deep-orange">
+								<i class="material-icons">send</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Fixed Button-->
+		<div class="fixed-action-btn">
+		 	<a class="btn-floating btn-large deep-orange">
+		    	<i class="large material-icons">reorder</i>
+		    </a>
+		    <ul>
+		    	<li><a class="btn-floating yellow darken-1"><i class="material-icons">mode_edit</i></a></li>
+		    	<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+		    	<li><a class="btn-floating blue" href=""><i class="material-icons">supervisor_account</i></a></li>
+		    </ul>
+		</div>
+
+		<!--Scripts-->
+		<!--Bower Scripts-->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/materialize/dist/js/materialize.js"></script>
+		
+		<!--Custom Scripts-->
+		<script type="text/javascript" src="custom_components/custom/js/script.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+				$('.modal').modal();
+				$('select').material_select();
+				$('.button-collapse').sideNav();
+
+				$(document).ready(function(){
+					$('.scrollspy').scrollSpy();
+				});
+			});
+		</script>
+	</body>
+</html>
