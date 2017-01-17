@@ -116,8 +116,15 @@ body {
 }
 
 /*section-projects*/
+.section-projects .section-projects-title {
+	font-size: 13px!important;
+}
+.section-projects .section-projects-title .section-projects-title-icon {
+	vertical-align: middle;
+	font-size: 20px!important;
+}
 .section-projects {
-	padding-top:2.5rem;
+	padding-top:2rem;
 	padding-bottom: 2rem;
 }
 .section-projects .row {
