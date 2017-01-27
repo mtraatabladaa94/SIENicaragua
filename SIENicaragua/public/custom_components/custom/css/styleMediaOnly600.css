@@ -1,0 +1,23 @@
+/*MEDIA QUERY*/
+@media only screen and (max-width: 600px) {
+	/*REGLAS GENERALES*/
+
+
+	/*LOGO LARGO*/
+	.logo-large {
+		width: 103px;
+	}
+
+	/*CUSTOM COMPONENTS*/
+
+
+	/*SECCIONES*/
+	.section-landing-welcome .section-landing-title {
+		font-size:26px;
+		text-align: center;
+	}
+	.section-landing-welcome .section-landing-caption {
+		font-size:16px;
+		text-align: center;
+	}
+}
