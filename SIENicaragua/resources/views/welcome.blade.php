@@ -1,9 +1,5 @@
 @extends('_Layout.main')
 
-@section('title')
-    Inicio - 
-@endsection
-
 @section('sadara-content')
     <div class="primary-container">
         <div id="section-landing-welcome" class="scrollspy section-landing-welcome light-blue darken-1">

@@ -14,7 +14,7 @@ class AddTableContact extends Migration
     public function up()
     {
         Schema::create('Contact', function (Blueprint $table) {
-            $table->increments('id');
+            $table->uuid('id')->unique();
             $table->string('name');
             $table->string('lastName');
             $table->string('phone');
