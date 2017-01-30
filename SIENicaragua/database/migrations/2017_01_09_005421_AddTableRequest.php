@@ -13,7 +13,7 @@ class AddTableRequest extends Migration
      */
     public function up()
     {
-        Schema::create('Request', function (Blueprint $table) {
+        Schema::create('Requests', function (Blueprint $table) {
             $table->uuid('id')->unique();
             $table->string('companyName');
             $table->string('name');
@@ -21,10 +21,10 @@ class AddTableRequest extends Migration
             $table->string('phone');
             $table->string('email');
             $table->string('address');
-            $table->enum('license', [0, 1, 2, 3])->default(0);
-            $table->enum('countPC');
-            $table->enum('countEmployees');
-            $table->enum('countLicense');
+            $table->enum('license', [0, 1, 2, 3])->default("0");
+            $table->enum('countPC', [0, 1, 2, 3, 4, 5, 6, 7]);
+            $table->enum('countEmployees', [0, 1, 2, 3, 4, 5, 6, 7]);
+            $table->enum('countLicense', [0, 1, 2, 3, 4, 5, 6, 7]);
 
             $table->boolean('IsSend');
 

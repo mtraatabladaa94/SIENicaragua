@@ -13,7 +13,7 @@ class AddTableSubscribed extends Migration
      */
     public function up()
     {
-        Schema::create('Subscribed', function (Blueprint $table) {
+        Schema::create('Subscribeds', function (Blueprint $table) {
             $table->uuid('id')->unique();
             $table->string('email');
 

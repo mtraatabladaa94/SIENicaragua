@@ -13,7 +13,7 @@ class AddTableContact extends Migration
      */
     public function up()
     {
-        Schema::create('Contact', function (Blueprint $table) {
+        Schema::create('Contacts', function (Blueprint $table) {
             $table->uuid('id')->unique();
             $table->string('name');
             $table->string('lastName');
