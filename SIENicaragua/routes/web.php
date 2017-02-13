@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('startfree', function () {
+    return view('demo');
+});
 
 Route::group(['prefix'	=>	'admin'], function () {
 	Route::resource('contacts', 'ContactController');
